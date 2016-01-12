@@ -34,6 +34,7 @@ pdftotext -layout -nopgbrk input_file.pdf output_file.txt
 ```
 This is also supposed to be available on Windows. I'm sure a Google 
 search will help you to find out more.
+
 2. Generate the csv file using this tool. Like so:
 ```bash
 python prepInBuildOut.py input_text_file.txt
