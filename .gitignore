@@ -4,5 +4,6 @@
 # Except
 !.gitignore
 !README.md
+!LICENSE.txt
 !prepInBldOut.py
 !extractData.py
