@@ -1,0 +1,8 @@
+# Ignore everything
+*
+
+# Except
+!.gitignore
+!README.md
+!prepInBldOut.py
+!extractData.py
