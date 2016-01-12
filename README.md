@@ -25,16 +25,23 @@ pattern.
 `./samples/outCSV`: Outputs for the sample inputs.
 
 ### Usage Instructions:
-1. Convert the pdf file to a text file while preserving the layout of the pdf file. I accomplish this by use of the [pdftotext](http://linux.die.net/man/1/pdftotext) command line utility on Linux. Like so:  ```bash
+1. Convert the pdf file to a text file while preserving the layout of the pdf file. I accomplish this by use of the [pdftotext](http://linux.die.net/man/1/pdftotext) command line utility on Linux. Like so:  
+```bash
 pdftotext -layout -nopgbrk input_file.pdf output_file.txt
-```  This is also supposed to be available on Windows. I'm sure a Google search will help you to find out more.
-2. Generate the csv file using this tool. Like so:  ```bash
+```  
+This is also supposed to be available on Windows. I'm sure a Google search will help you to find out more.
+2. Generate the csv file using this tool. Like so:  
+```bash
 python prepInBuildOut.py input_text_file.txt
-```  Or allow the script to be an executable:  ```bash
+```  Or allow the script to be an executable:  
+```bash
 chmod +x prepInBuildOut.py
-```  And run it like so:  ```bash
+```  
+And run it like so:  
+```bash
 ./prepInBuildOut.py input_text_file.txt
-```  Ensure that both the python source files `extractData.py` and `prepInBldOut.py` are in your current directory while following the above instructions to run the script. The outputs will be written to a directory called `outCSV` in the current directory.
+```  
+Ensure that both the python source files `extractData.py` and `prepInBldOut.py` are in your current directory while following the above instructions to run the script. The outputs will be written to a directory called `outCSV` in the current directory.
 
 The output files are named as:
 College-ExamPattern-Year-Branch-ExamDate.csv
